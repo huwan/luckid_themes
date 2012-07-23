@@ -18,7 +18,7 @@ get_header(); ?>
 				</a>
 			    </h2>
 			    					
-		        <div class="post_time"><?php the_time('Y年n月j日'); ?></div>
+		        <div class="post_time"><?php echo get_the_author();echo '  发布于  ';the_time('Y年n月j日'); ?></div>
 		        <div class="post_comments"><?php comments_popup_link ('抢沙发','1条评论','%条评论'); ?></div>
 		        <div class="clearBoth"></div>											
 		        </div><!-- end postHeader -->
